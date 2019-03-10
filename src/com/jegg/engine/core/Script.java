@@ -1,4 +1,6 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
+
+import com.jegg.engine.physics.PhysicsBody;
 
 /**
  * An object designed to add functionality to GameObjects.

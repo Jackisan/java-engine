@@ -1,4 +1,4 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
 
 import java.lang.reflect.Method;
 
@@ -57,7 +57,7 @@ public class Main {
         handler = new Handler();
 
         //Set up dyn4j physics world
-        Physics.setWorld(new World());
+        Physics.SetWorld(new World());
 
         // This line is critical for LWJGL's interoperation with GLFW's
         // OpenGL context, or any context that is managed externally.
@@ -103,7 +103,7 @@ public class Main {
             while(delta >= 1) {
                 Performance.deltaTime = delta;
                 handler.update();
-                Physics.getWorld().update(delta);
+                Physics.GetWorld().update(delta);
                 //Count another update
                 updates++;
                 //Reset delta

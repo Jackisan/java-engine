@@ -3,7 +3,7 @@ package com.jegg.engine.input;
 public class Input {
 
     public static boolean isKey(int keyCode){
-        if(KeyboardInput.keysPressed[keyCode] || KeyboardInput.keysReleased[keyCode]){
+        if(KeyboardInput.keysPressed[keyCode] || KeyboardInput.keysReleased[keyCode] || KeyboardInput.keys[keyCode]){
             return true;
         }
         else{
@@ -41,6 +41,15 @@ public class Input {
     }
     public static double getScrollY(){
         return ScrollInput.scrollY;
+    }
+
+    public static void update(){
+        for(int i = 0; i < KeyboardInput.keysPressed.length; i++){
+            KeyboardInput.keysReleased[i] = false;
+            if(i <= MouseButtonInput.NUM_OF_BUTTONS - 1){
+                MouseButtonInput.buttonsReleased[i] = false;
+            }
+        }
     }
 
 }

@@ -1,4 +1,4 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
 
 import java.util.concurrent.ThreadLocalRandom;
 

@@ -1,6 +1,6 @@
 package com.jegg.engine.scriptcomponents;
 
-import com.jegg.engine.Vec2d;
+import com.jegg.engine.core.Vec2d;
 
 public class Tri2d {
 

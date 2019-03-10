@@ -1,4 +1,4 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
 
 public class Performance {
 

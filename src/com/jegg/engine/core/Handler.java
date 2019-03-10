@@ -1,4 +1,6 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
+
+import com.jegg.engine.input.Input;
 
 import java.util.ArrayList;
 
@@ -30,6 +32,7 @@ public class Handler {
                 limbo.add(obj);
             }
         }
+        Input.update();
     }
 
     void render(){

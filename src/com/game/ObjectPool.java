@@ -1,7 +1,7 @@
-package com.jegg.game;
+package com.game;
 
-import com.jegg.engine.GameObject;
-import com.jegg.engine.Script;
+import com.jegg.engine.core.GameObject;
+import com.jegg.engine.core.Script;
 import com.jegg.engine.scriptcomponents.Sprite;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ public class ObjectPool extends Script {
         for(int i = 0; i < 50; i++){
             bullets_free.add(new GameObject());
             Sprite sprite = bullets_free.get(i).addScript(Sprite.class);
-            sprite.setImage("resources/laser_sprite.png");
+            //sprite.setImage("resources/laser_sprite.png");
         }
     }
 

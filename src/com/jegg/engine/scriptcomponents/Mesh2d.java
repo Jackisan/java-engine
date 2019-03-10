@@ -1,9 +1,7 @@
 package com.jegg.engine.scriptcomponents;
 
-import com.jegg.engine.Script;
-import com.jegg.engine.Vec2d;
-
-import java.awt.*;
+import com.jegg.engine.core.Script;
+import com.jegg.engine.core.Vec2d;
 
 import static org.lwjgl.opengl.GL11.*;
 
@@ -35,7 +33,7 @@ public class Mesh2d extends Script {
         glBegin(GL_POLYGON);
         {
             for(Vec2d vec : verts){
-                glVertex2f(vec.x, vec.y);
+                glVertex2f(getPosition().x + vec.x, getPosition().y + vec.y);
             }
         }
         glEnd();

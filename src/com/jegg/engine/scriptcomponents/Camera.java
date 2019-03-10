@@ -1,8 +1,8 @@
 package com.jegg.engine.scriptcomponents;
 
-import com.jegg.engine.Script;
-import com.jegg.engine.Vec2d;
-import com.jegg.engine.Vec3d;
+import com.jegg.engine.core.Script;
+import com.jegg.engine.core.Vec2d;
+import com.jegg.engine.core.Vec3d;
 
 public class Camera extends Script {
 

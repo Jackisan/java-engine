@@ -1,4 +1,4 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
 
 import org.dyn4j.geometry.Vector2;
 

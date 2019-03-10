@@ -1,4 +1,4 @@
-package com.jegg.engine;
+package com.jegg.engine.core;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,7 @@ import java.awt.*;
 import static org.lwjgl.glfw.GLFW.*; // allows us to create windows
 import static org.lwjgl.opengl.GL11.*; // gives us access to things like "GL_TRUE" which we'll need
 import static org.lwjgl.system.MemoryUtil.*; // allows us to use 'NULL' in our code, note this is slightly different from java's 'null'
-import java.nio.ByteBuffer; // Used for getting the primary monitor later on.
+
 import org.lwjgl.glfw.GLFWVidMode; // again used for primary monitor stuff.
 
 /**
