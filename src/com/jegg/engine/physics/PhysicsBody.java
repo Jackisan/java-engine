@@ -8,11 +8,11 @@ public class PhysicsBody extends Script {
     public Body body = new Body();
 
     public void start(){
-
+        Physics.GetWorld().addBody(body);
     }
 
     public void update(){
-
+        
     }
 
 }

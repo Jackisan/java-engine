@@ -4,7 +4,11 @@ import com.jegg.engine.core.GameObject;
 import com.jegg.engine.core.Script;
 import com.jegg.engine.core.Vec2d;
 import com.jegg.engine.input.Input;
+import com.jegg.engine.physics.PhysicsBody;
 import com.jegg.engine.scriptcomponents.Mesh2d;
+import org.dyn4j.dynamics.Force;
+import org.dyn4j.geometry.Polygon;
+import org.dyn4j.geometry.Vector2;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL11;
 
@@ -25,6 +29,10 @@ public class Player extends Script {
         verts[3] = new Vec2d(-2,2);
         mesh.setVerts(verts);
         mesh.drawMode = GL11.GL_QUADS;
+
+        PhysicsBody physics = getGameObject().addScript(PhysicsBody.class);
+        physics.body.addFixture(new Polygon(verts[0].toPhysVec(), verts[1].toPhysVec(), verts[2].toPhysVec(), verts[3].toPhysVec()));
+        physics.body.setLinearVelocity(10,10);
     }
 
     public void update(){
