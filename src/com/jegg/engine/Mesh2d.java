@@ -7,6 +7,7 @@ import static org.lwjgl.opengl.GL11.*;
 public class Mesh2d extends Script {
 
     private Vec2d[] verts;
+    public int drawMode = GL_POLYGON;
 
     public void setVerts(Vec2d[] verts){
         this.verts = verts.clone();

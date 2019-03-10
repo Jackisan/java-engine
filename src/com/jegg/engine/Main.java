@@ -2,6 +2,9 @@ package com.jegg.engine;
 
 import java.lang.reflect.Method;
 
+import com.jegg.engine.input.KeyboardInput;
+import com.jegg.engine.input.MouseButtonInput;
+import com.jegg.engine.input.MouseMovementInput;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 
@@ -17,7 +20,6 @@ public class Main {
     private boolean running = true;
 
     private static Handler handler;
-    public static Input input;
 
     private Main(){
         run();
@@ -39,6 +41,11 @@ public class Main {
         // will print the error message in System.err.
         GLFWErrorCallback.createPrint(System.err).set();
 
+        //Set up input classes
+        glfwSetMouseButtonCallback(Window.getWindow(), new MouseButtonInput());
+        glfwSetCursorPosCallback(Window.getWindow(), new MouseMovementInput());
+        glfwSetKeyCallback(Window.getWindow(), new KeyboardInput());
+
         //Instantiate the Handler
         handler = new Handler();
 
@@ -54,13 +61,6 @@ public class Main {
 
         // Set the clear color
         glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-
-        //Instantiate input, add listeners to the window
-        input = new Input();
-        /*Window.GetFrame().addKeyListener(input);
-        Window.GetFrame().addMouseListener(input);
-        Window.GetFrame().addMouseMotionListener(input);
-        Window.GetFrame().addMouseWheelListener(input);*/
 
         //OpenGL setup
         glMatrixMode(GL_PROJECTION);
@@ -94,7 +94,7 @@ public class Main {
             delta += (now - lastTime) / ns;
             lastTime = now;
             while(delta >= 1) {
-                handler.update(true);
+                handler.update();
                 //Count another update
                 updates++;
                 //Reset delta
@@ -132,9 +132,6 @@ public class Main {
 
     public static Handler getHandler(){
         return handler;
-    }
-    public static Input getInput(){
-        return input;
     }
     private static void LoadStartScript(){
         try {

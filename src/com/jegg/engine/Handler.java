@@ -1,6 +1,5 @@
 package com.jegg.engine;
 
-import java.awt.*;
 import java.util.ArrayList;
 
 import static org.lwjgl.glfw.GLFW.glfwPollEvents;
@@ -17,7 +16,7 @@ public class Handler {
 
     }
 
-    void update(boolean doPhysics){
+    void update(){
 
         glfwPollEvents();
 
@@ -32,14 +31,11 @@ public class Handler {
                 limbo.add(obj);
             }
         }
-        if(doPhysics) {
-            for (Physics p : physics) {
-                if (p.getActive() && !p.destroyed) {
-                    p.update();
-                }
+        for (Physics p : physics) {
+            if (p.getActive() && !p.destroyed) {
+                p.update();
             }
         }
-        Main.getInput().update();
     }
 
     void render(){
@@ -49,8 +45,6 @@ public class Handler {
 
         //if 2d
         //glClear(GL_COLOR_BUFFER_BIT);
-
-
 
         for(Object obj : objects){
             if(obj instanceof Script && !((Script)obj).destroyed){
