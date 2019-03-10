@@ -9,7 +9,6 @@ import static org.lwjgl.opengl.GL11.*;
 public class Handler {
 
     private ArrayList<Object> objects = new ArrayList<>();
-    private ArrayList<Physics> physics = new ArrayList<>();
     private ArrayList<Object> limbo = new ArrayList<>();
 
     Handler(){
@@ -29,11 +28,6 @@ public class Handler {
             }
             else{
                 limbo.add(obj);
-            }
-        }
-        for (Physics p : physics) {
-            if (p.getActive() && !p.destroyed) {
-                p.update();
             }
         }
     }
@@ -57,10 +51,6 @@ public class Handler {
         glfwSwapBuffers(Window.getWindow());
     }
 
-    ArrayList<Physics> getPhysics(){
-        return physics;
-    }
-
     void addScript(Script s){
         limbo.add(s);
     }
@@ -82,16 +72,7 @@ public class Handler {
     void processLimbo(){
         for(Object obj : limbo){
 
-            if(obj instanceof Physics){
-                if(((Physics)obj).destroyed){
-                    physics.remove(obj);
-                }
-                else{
-                    physics.add((Physics)obj);
-                }
-            }
-            //else if its some other script
-            else if(obj instanceof Script){
+            if(obj instanceof Script){
                 if(((Script) obj).destroyed){
                     objects.remove(obj);
                 }
@@ -99,7 +80,6 @@ public class Handler {
                     objects.add(obj);
                 }
             }
-            //if its a standalone
             else if(obj instanceof Standalone){
                 if(((Standalone)obj).destroyed){
                     objects.remove(obj);

@@ -1,4 +1,7 @@
-package com.jegg.engine;
+package com.jegg.engine.scriptcomponents;
+
+import com.jegg.engine.Script;
+import com.jegg.engine.Vec2d;
 
 import java.awt.*;
 

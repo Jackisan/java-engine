@@ -20,7 +20,7 @@ public class Performance {
     /**
      * 1 divided by the updates per second, value is updated in the main loop
      */
-    public static float delta;
+    public static double deltaTime;
 
 
 

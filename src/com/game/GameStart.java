@@ -2,7 +2,7 @@ package com.game;
 
 import com.jegg.engine.*;
 
-import com.jegg.game.Player;
+import com.jegg.engine.scriptcomponents.Mesh2d;
 
 
 public class GameStart {

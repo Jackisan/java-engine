@@ -5,6 +5,9 @@ import java.lang.reflect.Method;
 import com.jegg.engine.input.KeyboardInput;
 import com.jegg.engine.input.MouseButtonInput;
 import com.jegg.engine.input.MouseMovementInput;
+import com.jegg.engine.input.ScrollInput;
+import com.jegg.engine.physics.Physics;
+import org.dyn4j.dynamics.World;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 
@@ -41,16 +44,20 @@ public class Main {
         // will print the error message in System.err.
         GLFWErrorCallback.createPrint(System.err).set();
 
+        //Instantiate Window
+        new Window();
+
         //Set up input classes
         glfwSetMouseButtonCallback(Window.getWindow(), new MouseButtonInput());
         glfwSetCursorPosCallback(Window.getWindow(), new MouseMovementInput());
         glfwSetKeyCallback(Window.getWindow(), new KeyboardInput());
+        glfwSetScrollCallback(Window.getWindow(), new ScrollInput());
 
         //Instantiate the Handler
         handler = new Handler();
 
-        //Instantiate Window
-        new Window();
+        //Set up dyn4j physics world
+        Physics.setWorld(new World());
 
         // This line is critical for LWJGL's interoperation with GLFW's
         // OpenGL context, or any context that is managed externally.
@@ -94,7 +101,9 @@ public class Main {
             delta += (now - lastTime) / ns;
             lastTime = now;
             while(delta >= 1) {
+                Performance.deltaTime = delta;
                 handler.update();
+                Physics.getWorld().update(delta);
                 //Count another update
                 updates++;
                 //Reset delta

@@ -1,8 +1,10 @@
-package com.jegg.engine;
+package com.jegg.engine.scriptcomponents;
 
-import java.awt.*;
+import com.jegg.engine.Script;
+import com.jegg.engine.Vec2d;
+import com.jegg.engine.Vec3d;
 
-public class Camera extends Script{
+public class Camera extends Script {
 
     public Vec3d camPosition = new Vec3d(0,0,0);
     private Vec2d translatedVec2d;

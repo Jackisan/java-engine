@@ -1,5 +1,7 @@
 package com.jegg.engine;
 
+import org.dyn4j.geometry.Vector2;
+
 import java.awt.*;
 
 public class Vec2d {
@@ -69,6 +71,10 @@ public class Vec2d {
             point = new Point((int)x, (int)y);
             return point;
         }
+    }
+
+    public Vector2 toPhysVec(){
+        return new Vector2(x, y);
     }
 
     public static float Distance(Vec2d v1, Vec2d v2){

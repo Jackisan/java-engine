@@ -2,7 +2,7 @@ package com.jegg.game;
 
 import com.jegg.engine.GameObject;
 import com.jegg.engine.Script;
-import com.jegg.engine.Sprite;
+import com.jegg.engine.scriptcomponents.Sprite;
 
 import java.util.ArrayList;
 

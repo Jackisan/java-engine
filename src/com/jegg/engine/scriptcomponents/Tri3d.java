@@ -1,4 +1,6 @@
-package com.jegg.engine;
+package com.jegg.engine.scriptcomponents;
+
+import com.jegg.engine.Vec3d;
 
 public class Tri3d {
 

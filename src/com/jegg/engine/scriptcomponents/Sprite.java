@@ -1,4 +1,6 @@
-package com.jegg.engine;
+package com.jegg.engine.scriptcomponents;
+
+import com.jegg.engine.Script;
 
 import javax.swing.*;
 import java.awt.*;
