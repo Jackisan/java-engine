@@ -1,20 +1,20 @@
 package com.jegg.engine;
 
-public class Tri {
+public class Tri3d {
 
-    private Vec3[] vecs;
+    private Vec3d[] vecs;
     public int vecsLength;
     public int[] vecX;
     public int[] vecY;
 
-    public Tri(Vec3[] vecs){
+    public Tri3d(Vec3d[] vecs){
         this.vecs = vecs;
         vecsLength = vecs.length;
         fillVecX();
         fillVecY();
     }
 
-    public void setVecs(Vec3[] vecs){
+    public void setVecs(Vec3d[] vecs){
         this.vecs = vecs;
         vecsLength = vecs.length;
         fillVecX();

@@ -1,24 +1,22 @@
 package com.jegg.engine;
 
-import com.jegg.game.GeomTest;
-
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * The JPanel that gets added to the desktop window to add graphics into the game.
+ * All graphics are rendered on a GraphicsPanel
+ */
 public class GraphicsPanel extends JPanel {
 
-    public static Graphics2D g2d;
-
-    public Dimension getPreferredSize() {
-        return Main.window.getPreferredSize();
-    }
-
     public void paintComponent(Graphics g){
-        g2d = (Graphics2D)g;
+        Graphics2D g2d = (Graphics2D)g;
         g.setColor(Color.black);
-        g.fillRect(0,0,1200,700);
-
-        GeomTest.start();
-        GeomTest.render(g2d);
+        g.fillRect(0,0,Window.GetDimension().width, Window.GetDimension().height);
+        g.setColor(Color.green);
+        g.drawString("FPS: " + Performance.fps, 10,10);
+        //Camera.getMain().translate2dPositive(g2d);
+        Main.getHandler().render();
+        //Camera.getMain().translate2dNegative(g2d);
     }
 }

@@ -1,24 +1,23 @@
 package com.jegg.engine;
 
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 
-public class Prim2 {
+public class Prim2d {
 
     //No point in having these, polygons cant use them
-    //public Vec2[] vecs;
-    //private Vec2[] cachedVecs;
+    //public Vec2d[] vecs;
+    //private Vec2d[] cachedVecs;
     public int[] xCoords;
     public int[] yCoords;
     public int nPoints;
 
     public Color color = Color.lightGray;
 
-    public Prim2(int[] xCoords, int[] yCoords){
+    public Prim2d(int[] xCoords, int[] yCoords){
         this.xCoords = xCoords.clone();
         this.yCoords = yCoords.clone();
     }
-    public Prim2(Point[] points){
+    public Prim2d(Point[] points){
         nPoints = points.length;
         xCoords = new int[nPoints];
         yCoords = new int[nPoints];
@@ -27,7 +26,7 @@ public class Prim2 {
             yCoords[i] = points[i].y;
         }
     }
-    Prim2(){
+    Prim2d(){
 
     }
 
@@ -44,7 +43,7 @@ public class Prim2 {
         g2d.fillPolygon(xCoords, yCoords, xCoords.length);
     }
 
-    public static class Rect extends Prim2{
+    public static class Rect extends Prim2d {
 
         public Rect(float x, float y, float width, float height){
             xCoords = new int[4];
