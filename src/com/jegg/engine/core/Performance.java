@@ -18,7 +18,7 @@ public class Performance {
     public static double maxUps = 60.0;
 
     /**
-     * 1 divided by the updates per second, value is updated in the main loop
+     * Ratio of seconds to updates, value is updated in the main loop
      */
     public static double deltaTime;
 

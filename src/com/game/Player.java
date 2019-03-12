@@ -15,7 +15,11 @@ import org.lwjgl.opengl.GL11;
 public class Player extends Script {
 
     public static Player instance;
-    public float speed = 1;
+    public float speed = 3;
+    public Vec2d lastPosition = new Vec2d(0,0);
+    public float lastTime = System.currentTimeMillis();
+    public float elapsedDistance;
+    public float elapsedTime;
 
     public void start(){
         instance = this;
@@ -36,6 +40,7 @@ public class Player extends Script {
     }
 
     public void update(){
+
         if(Input.isKey(GLFW.GLFW_KEY_W)){
             getPosition().y -= speed;
         }
@@ -51,6 +56,25 @@ public class Player extends Script {
         if(Input.isKeyUp(GLFW.GLFW_KEY_SPACE)){
             shoot();
         }
+
+        elapsedTime += System.currentTimeMillis() - lastTime;
+        elapsedDistance += Vec2d.Distance(getPosition().toVec2d(), lastPosition);
+
+        if(elapsedTime > 10000 || elapsedDistance > 30){
+            elapsedTime = 0;
+            elapsedDistance = 0;
+            Mesh2d mesh = new GameObject(getPosition()).addScript(Mesh2d.class);
+            mesh.drawMode = GL11.GL_QUADS;
+            Vec2d[] verts = new Vec2d[4];
+            verts[0] = new Vec2d(-2,-2);
+            verts[1] = new Vec2d(2,-2);
+            verts[2] = new Vec2d(2,2);
+            verts[3] = new Vec2d(-2,2);
+            mesh.setVerts(verts);
+        }
+
+        lastTime = System.currentTimeMillis();
+        lastPosition.set(getPosition());
     }
 
     public void shoot(){

@@ -7,4 +7,5 @@ public class MathP {
     public static int randomRange(int min, int max){
         return ThreadLocalRandom.current().nextInt(min,max);
     }
+
 }
