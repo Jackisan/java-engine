@@ -3,8 +3,10 @@ package com.game;
 import com.jegg.engine.core.GameObject;
 import com.jegg.engine.core.Script;
 import com.jegg.engine.core.Vec2d;
+import com.jegg.engine.core.Vec3d;
 import com.jegg.engine.input.Input;
 import com.jegg.engine.physics.PhysicsBody;
+import com.jegg.engine.scriptcomponents.Camera;
 import com.jegg.engine.scriptcomponents.Mesh2d;
 import org.dyn4j.dynamics.Force;
 import org.dyn4j.geometry.Polygon;
@@ -24,6 +26,7 @@ public class Player extends Script {
     public void start(){
         instance = this;
         getGameObject().addScript(ObjectPool.class);
+        getGameObject().addScript(Camera.class);
 
         Mesh2d mesh = getGameObject().addScript(Mesh2d.class);
         Vec2d[] verts = new Vec2d[4];
@@ -40,6 +43,8 @@ public class Player extends Script {
     }
 
     public void update(){
+
+        CubeSpawner.update();
 
         if(Input.isKey(GLFW.GLFW_KEY_W)){
             getPosition().y -= speed;
@@ -60,7 +65,7 @@ public class Player extends Script {
         elapsedTime += System.currentTimeMillis() - lastTime;
         elapsedDistance += Vec2d.Distance(getPosition().toVec2d(), lastPosition);
 
-        if(elapsedTime > 10000 || elapsedDistance > 30){
+        /*if(elapsedTime > 10000 || elapsedDistance > 30){
             elapsedTime = 0;
             elapsedDistance = 0;
             Mesh2d mesh = new GameObject(getPosition()).addScript(Mesh2d.class);
@@ -71,7 +76,7 @@ public class Player extends Script {
             verts[2] = new Vec2d(2,2);
             verts[3] = new Vec2d(-2,2);
             mesh.setVerts(verts);
-        }
+        }*/
 
         lastTime = System.currentTimeMillis();
         lastPosition.set(getPosition());

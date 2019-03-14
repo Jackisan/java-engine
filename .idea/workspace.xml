@@ -16,27 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/game/GameStart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/scriptcomponents/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -51,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="504">
               <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="method#GameObject#0;class#GameObject#0" />
@@ -65,8 +44,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="360">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/game/CubeSpawner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/scriptcomponents/Camera.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+              <folding>
+                <element signature="method#setMain#0;class#Camera#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/animation/Animator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#262#279#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/rendering/Text.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="234">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="126">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,10 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/jegg/engine/Mesh2.java" />
-        <option value="$PROJECT_DIR$/src/com/jegg/engine/Mesh3d.java" />
-        <option value="$PROJECT_DIR$/src/com/jegg/engine/Tri2d.java" />
-        <option value="$PROJECT_DIR$/src/com/jegg/engine/Transform.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/Cam.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/HandlerJob.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/Job.java" />
@@ -180,17 +196,21 @@
         <option value="$PROJECT_DIR$/src/com/game/ObjectPool.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/physics/PhysicsBody.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/core/GameObject.java" />
-        <option value="$PROJECT_DIR$/src/com/game/Player.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/core/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/core/MathP.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/core/Performance.java" />
         <option value="$PROJECT_DIR$/src/com/jegg/engine/rendering/Text.java" />
+        <option value="$PROJECT_DIR$/src/com/game/CubeSpawner.java" />
+        <option value="$PROJECT_DIR$/src/com/jegg/engine/animation/Animator.java" />
+        <option value="$PROJECT_DIR$/src/com/jegg/engine/animation/Animation.java" />
+        <option value="$PROJECT_DIR$/src/com/game/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/jegg/engine/scriptcomponents/Camera.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="603" />
-    <option name="y" value="78" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="699" />
     <option name="height" value="775" />
   </component>
@@ -200,8 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,6 +256,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="animation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-engine" type="b2602c69:ProjectViewProjectNode" />
@@ -283,10 +309,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552423247394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552575207594" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/lwjgl/lwjgl-zstd" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -375,7 +403,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20196672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -425,13 +453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lwjgl-3.2.1/lwjgl-glfw/lwjgl-glfw-sources.jar!/org/lwjgl/glfw/GLFWScrollCallbackI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lwjgl-3.2.1/lwjgl-glfw/lwjgl-glfw-sources.jar!/org/lwjgl/glfw/GLFWScrollCallbackI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/input/MouseMovementInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -475,16 +497,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/StartScript.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/scriptcomponents/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="method#getMain#0;class#Camera#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/scriptcomponents/Mesh3d.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -496,13 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lwjgl-3.2.1/lwjgl-glfw/lwjgl-glfw-sources.jar!/org/lwjgl/glfw/GLFW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="3665" selection-start-line="3665" selection-end-line="3665" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lwjgl-3.2.1/lwjgl-glfw/lwjgl-glfw-sources.jar!/org/lwjgl/glfw/GLFW.java" />
     <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/physics/Physics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -632,6 +638,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lwjgl.jar!/org/lwjgl/system/MemoryUtil.class" />
     <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -661,20 +668,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="504">
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="method#GameObject#0;class#GameObject#0" />
             <element signature="method#removeScript#0;class#GameObject#0" />
             <element signature="method#getScript#0;class#GameObject#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
@@ -692,29 +692,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lwjgl.jar!/org/lwjgl/system/MemoryUtil.class">
+    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/rendering/Text.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="885" selection-start-line="885" selection-end-line="885" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="234">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/rendering/Text.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="126">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/animation/Animator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#279#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/animation/Animation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/game/CubeSpawner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jegg/engine/scriptcomponents/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding>
+            <element signature="method#setMain#0;class#Camera#0" />
           </folding>
         </state>
       </provider>
