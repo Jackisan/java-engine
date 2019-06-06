@@ -8,6 +8,7 @@ import com.jegg.engine.input.Input;
 import com.jegg.engine.physics.PhysicsBody;
 import com.jegg.engine.scriptcomponents.Camera;
 import com.jegg.engine.scriptcomponents.Mesh2d;
+import com.jegg.engine.scriptcomponents.Mesh3d;
 import org.dyn4j.dynamics.Force;
 import org.dyn4j.geometry.Polygon;
 import org.dyn4j.geometry.Vector2;
@@ -28,18 +29,23 @@ public class Player extends Script {
         getGameObject().addScript(ObjectPool.class);
         getGameObject().addScript(Camera.class);
 
-        Mesh2d mesh = getGameObject().addScript(Mesh2d.class);
-        Vec2d[] verts = new Vec2d[4];
-        verts[0] = new Vec2d(-2,-2);
-        verts[1] = new Vec2d(2,-2);
-        verts[2] = new Vec2d(2,2);
-        verts[3] = new Vec2d(-2,2);
+        Mesh3d mesh = getGameObject().addScript(Mesh3d.class);
+        mesh.color[0] = 100;
+        mesh.color[1] = 0;
+        mesh.color[2] = 250;
+        Vec3d[] verts = new Vec3d[4];
+        verts[0] = new Vec3d(10,10, 0);
+        verts[1] = new Vec3d(10,10, 10);
+        verts[2] = new Vec3d(15,15, 0);
+        verts[3] = new Vec3d(15,15, 10);
         mesh.setVerts(verts);
         mesh.drawMode = GL11.GL_QUADS;
 
-        PhysicsBody physics = getGameObject().addScript(PhysicsBody.class);
-        physics.body.addFixture(new Polygon(verts[0].toPhysVec(), verts[1].toPhysVec(), verts[2].toPhysVec(), verts[3].toPhysVec()));
-        physics.body.setLinearVelocity(10,10);
+        getPosition().set(0,0,30);
+
+        //PhysicsBody physics = getGameObject().addScript(PhysicsBody.class);
+        //physics.body.addFixture(new Polygon(verts[0].toPhysVec(), verts[1].toPhysVec(), verts[2].toPhysVec(), verts[3].toPhysVec()));
+        //physics.body.setLinearVelocity(10,10);
     }
 
     public void update(){

@@ -7,6 +7,7 @@ import com.jegg.engine.input.MouseButtonInput;
 import com.jegg.engine.input.MouseMovementInput;
 import com.jegg.engine.input.ScrollInput;
 import com.jegg.engine.physics.Physics;
+
 import org.dyn4j.dynamics.World;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
@@ -70,11 +71,18 @@ public class Main {
         glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 
         //OpenGL setup
-        glMatrixMode(GL_PROJECTION);
+        glViewport(0,0,1200,700);
+        //glMatrixMode(GL_PROJECTION);
         glLoadIdentity(); // Resets any previous projection matrices
-        glOrtho(0, 640, 480, 0, 1, -1);
+        //glFrustum( -1.0, 1.0, -1.0, 1.0, 1.0, 102.0 );
         glMatrixMode(GL_MODELVIEW);
-        glDisable(GL_DEPTH_TEST);
+        //glLoadIdentity();
+        //glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // Set background color to black and opaque
+        //glClearDepth(1.0f);                   // Set background depth to farthest
+        //glEnable(GL_DEPTH_TEST);   // Enable depth testing for z-culling
+        //glDepthFunc(GL_LEQUAL);    // Set the type of depth-test
+        //glShadeModel(GL_SMOOTH);   // Enable smooth shading
+        //glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);  // Nice perspective corrections
 
         //Find start script in game project path and run it
         Main.LoadStartScript();
